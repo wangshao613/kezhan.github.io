@@ -61,6 +61,223 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-过渡动画" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/27/过渡动画/" class="article-date">
+  <time datetime="2017-02-27T07:33:11.940Z" itemprop="datePublished">2017-02-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/27/过渡动画/">过渡动画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="过渡动画"><a href="#过渡动画" class="headerlink" title="过渡动画"></a>过渡动画</h1><p>&lt;!DOCTYPE html&gt;</p>
+<html><br><head><br>    <title></title><br></head><br>    <style type="text/css"><br>        body{<br>            perspective:1200px /<em> 前置摄像头 </em>/<br>        }<br>        #box{<br>            transition: all 2s linear;/<em> 组合写法 </em>/<br>            transform:skewX(145deg) skewY(165deg);<br>            transition-property: width ;  /<em> 过渡的属性 要控制的属性 </em>/<br>            transition-duration: 2s;      /<em> 过渡动画执行的时间 </em>/<br>            transition-timing-function: linear; /<em> 过渡动画的运动方式 </em>/<br>        }<br>    </style><br><body><br><br></body><br></html>
+
+
+<p>#离线缓存技术</p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<html manifest="cache.mainfest"><br><head><br>    <title>离线缓存</title><br>    <link rel="stylesheet" type="text/css" href="index.css"><br></head><br><body><br><br></body><br></html>
+
+<pre><code>新建一个cache.manifest文件  里边写上 缓存的图片和引入的css样式
+例如： CACHE MANIFEST
+       aaa.jpg
+       index.css
+</code></pre><h1 id="一个免费的数据库-聚合数据"><a href="#一个免费的数据库-聚合数据" class="headerlink" title="一个免费的数据库  聚合数据"></a>一个免费的数据库  聚合数据</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/27/过渡动画/" data-id="ciznxqntr00058ov22kuvjg0m" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/h5/">h5</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-c3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/27/c3/" class="article-date">
+  <time datetime="2017-02-27T02:19:19.252Z" itemprop="datePublished">2017-02-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/27/c3/">c3属性回顾</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="c3-属性重新回顾"><a href="#c3-属性重新回顾" class="headerlink" title="c3 属性重新回顾"></a>c3 属性重新回顾</h1><ol>
+<li>选择器 </li>
+</ol>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;选择器复用&lt;/title&gt;
+&lt;/head&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+    /* 首位匹配 */
+    ul li input[class^=en]{
+        background: #232;
+    }
+    /* 从后边开始匹配 */
+    ul li input[class$=t0]{
+        background:#343; 
+    }
+    /* 全局匹配 */
+    ul li input[class*=t0]{
+        background:#323;
+    }
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;input type=&quot;text&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type=&quot;text&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type=&quot;number&quot; class = &quot;en1-text0&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type=&quot;text&quot; class = &quot;en2-text0&quot;&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input type=&quot;text  class = &quot;en2-text0&quot;&quot;&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h1 id="弹性和布局"><a href="#弹性和布局" class="headerlink" title="弹性和布局"></a>弹性和布局</h1><pre><code>父元素加上 display:flex; flex-flow: col wrap; align-items:center;
+justify-content:center;
+</code></pre><h1 id="自适应单位设置"><a href="#自适应单位设置" class="headerlink" title="自适应单位设置"></a>自适应单位设置</h1><pre><code>var bw = (document.documentElement.clientWidth/640)*20 + &quot;px&quot;;
+var htmlTag = document.getElementsByTagName(&quot;html&quot;)[0];
+htmlTag.style.fontSize=bw;
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/27/c3/" data-id="ciznxqnsc00008ov23vk3zeza" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-H5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/02/27/H5/" class="article-date">
+  <time datetime="2017-02-27T01:24:47.491Z" itemprop="datePublished">2017-02-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/27/H5/">今天我们对H5在重新回顾一下</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="先认识下-新出现的标签"><a href="#先认识下-新出现的标签" class="headerlink" title="先认识下 新出现的标签"></a>先认识下 新出现的标签</h1><p>1.标签</p>
+<pre><code>header  nav  section   footer   这些标签比较语义化 一看就知道不做多的介绍
+&lt;article&gt;
+    &lt;figure&gt;独立的媒体内容的标题 在figure标签之内是唯一的&lt;/figure&gt;
+    &lt;summary&gt;文章摘要&lt;/summary&gt;
+    &lt;audio controls autoplay loop src=&quot;&quot;&gt;音频标签&lt;/audio&gt;
+    &lt;video controls autoplay loop src=&quot;&quot;&gt;视频标签&lt;/video&gt;
+    &lt;mark&gt; 标签 &lt;/mark&gt; &lt;time&gt;时间标签&lt;/time&gt;
+    &lt;bdi&gt;专门用来装名字的标签&lt;/bdi&gt;
+    &lt;canvas&gt; 画布标签 &lt;/canvas&gt;
+    &lt;aside&gt; 侧边栏 与主题内容没关系的代码&lt;/aside&gt;
+&lt;/article&gt;
+
+&lt;table&gt;
+    &lt;caption&gt; 财务报表（标题）&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col width=&quot;*&quot;&gt; &lt;!-- 宽度自适应 --&gt;
+        &lt;col width=&quot;*&quot;&gt;
+        &lt;col width=&quot;*&quot;&gt;
+        &lt;col width=&quot;*&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;!-- 表头部分 --&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;4&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;!-- 表身部分 --&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;01&lt;/td&gt;
+            &lt;td&gt;02&lt;/td&gt;
+            &lt;td&gt;03&lt;/td&gt;
+            &lt;td&gt;04&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre><p>2.重新认识下input的标签和内部属性</p>
+<pre><code>&lt;input pattern=&quot;[a-z]&quot; type=&quot;&quot; name=&quot;&quot;&gt; 在里的pattern是行内正则验证
+
+&lt;input type=&quot;number&quot; max=&quot;&quot; min=&quot;&quot; step=&quot;&quot; &gt;  
+
+type的类型有 number tel url email  range color date month week time text password
+</code></pre><h1 id="手机适配方案"><a href="#手机适配方案" class="headerlink" title="手机适配方案"></a>手机适配方案</h1><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html  style=&quot;font-size：20px;&quot; &gt;
+&lt;head&gt;
+    &lt;meta name=&quot;viewport&quot;  content=&quot;width  user-scalable=no&quot; charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/02/27/H5/" data-id="ciznxqnsl00018ov2qvmt70l9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/h5/">h5</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/02/16/first/" class="article-date">
@@ -103,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/16/first/" data-id="ciz9l7v6b0001lwv2kqnsqdx5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/16/first/" data-id="ciznxqntp00048ov27t9lyy5p" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/广告加盟/">广告加盟</a></li></ul>
@@ -150,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/15/hello-world/" data-id="ciz9l7v500000lwv269vum6i8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/02/15/hello-world/" data-id="ciznxqnvf00098ov2ivfk3mr8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -172,7 +389,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/广告加盟/">广告加盟</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/h5/">h5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/广告加盟/">广告加盟</a></li></ul>
     </div>
   </div>
 
@@ -182,7 +399,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/广告加盟/" style="font-size: 10px;">广告加盟</a>
+      <a href="/tags/h5/" style="font-size: 20px;">h5</a> <a href="/tags/广告加盟/" style="font-size: 10px;">广告加盟</a>
     </div>
   </div>
 
@@ -202,6 +419,18 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/02/27/过渡动画/">过渡动画</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/27/c3/">c3属性回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2017/02/27/H5/">今天我们对H5在重新回顾一下</a>
+          </li>
         
           <li>
             <a href="/2017/02/16/first/">first</a>
